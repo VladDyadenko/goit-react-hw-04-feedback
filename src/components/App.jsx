@@ -47,7 +47,7 @@ const App = () => {
         <Section title="Please leave feedback">
           {
             <FeedbackOptions
-              nameBtn={['good', 'neutral', 'bad']}
+              nameBtn={Object.keys({ good, neutral, bad })}
               handlClickButton={chandlClickButton}
             ></FeedbackOptions>
           }
